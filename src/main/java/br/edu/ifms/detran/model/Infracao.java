@@ -24,7 +24,7 @@ public class Infracao implements Serializable{
 	private Integer id;
 	private String descricao;
 	private int pontos;
-	private float valor;
+	private double valor;
 	
 	@OneToMany(mappedBy = "infracao")
 	private List<Multa> multas = new ArrayList<Multa>();
@@ -32,12 +32,12 @@ public class Infracao implements Serializable{
 	public Infracao() {
 		// TODO Auto-generated constructor stub
 	}
-	public Infracao(Integer id, String descricao, int pontos, float valor) {
+	public Infracao(Integer id, String descricao, int pontos, double d) {
 		super();
 		this.id = id;
 		this.descricao = descricao;
 		this.pontos = pontos;
-		this.valor = valor;
+		this.valor = d;
 	}
 	public Integer getId() {
 		return id;
@@ -57,7 +57,7 @@ public class Infracao implements Serializable{
 	public void setPontos(int pontos) {
 		this.pontos = pontos;
 	}
-	public float getValor() {
+	public double getValor() {
 		return valor;
 	}
 	public void setValor(float valor) {

@@ -105,6 +105,21 @@ public class Multa implements Serializable{
 		Multa other = (Multa) obj;
 		return Objects.equals(id, other.id);
 	}
+
+	public Object getNome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getMarca() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getPlaca() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
